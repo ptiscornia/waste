@@ -1,0 +1,87 @@
+---
+title: "CDP quality checks"
+subtitle: "Version: 1st extract"
+date: "`r lubridate::today()`"
+output: html_document
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+
+options(scipen = 999)
+```
+
+```{r}
+source(here::here("R/00-libraries.R"))
+source(here("R/QA_agents.R"))
+source(here("R/QA_about_page.R"))
+```
+
+```{r}
+# Using `validate_rmd()` here to enable validation mode for R Markdown
+# documents; options for the can be set here, as well
+validate_rmd()
+```
+
+<br>
+
+```{r}
+navset_underline(
+  nav_panel(
+    title = "About", 
+    about["part_1"],
+    table_n_responses
+  ),
+  nav_panel(
+    title = "Data Quality report", 
+    card(
+      get_agent_report(
+        agent = agent_df_structure,
+        title = "Data Quality Report",
+        arrange_by = "severity",
+        keep = "fail_states"
+      )
+    ),
+    card(
+      get_agent_report(
+        agent = agent_df_indicators,
+        title = "Data Quality Report",
+        arrange_by = "severity",
+        keep = "fail_states"
+      )
+    )
+  )
+)
+```
+
+
+
+
+<br>
+<br>
+
+###### Check columns thar seem to be merged (they appear as lists in the dataframe)
+
+<br>
+<br>
+
+### Check values as numbers, clean them and check if any value got lost
+```{r}
+# n_na_original <- unname(table(!is.na(data_step06$response_answer))[2])
+# n_na_parsed <- unname(table(!is.na(parse_number(data_step06$response_answer)))[2])
+# 
+# n_na_original == n_na_parsed[1]
+```
+
+- The number of columns in your data match the number of variables you have in your data dictionary (i.e., no variables were accidentally dropped). Similarly, there should be no unexpected missing data for variables (i.e., if the data was collected, it should exist in your dataset).
+
+
+```{r}
+#write.csv(all_passed(agent, i = NULL), "QA_output/qa_checks_log.csv", append = FALSE)
+```
+
+
+```{r}
+#scan_data(cleaned_data, sections = "OV")
+```
+

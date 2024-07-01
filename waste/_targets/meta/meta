@@ -1,0 +1,33 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+clean_data|function|2e0756d361b9e738|||||||||||||||
+data_file|stem||536ef885f3e49db1|12254ed171cddf29|-679625259|https://docs.google.com/spreadsheets/d/1zABLSeJWC-soHltS5oac94iz8sWm9xMFW3jZ6QemY8c/edit#gid=0|t19885.592817263s||0|file|local|vector|||||_paths_ missing files httpsdocs.google.comspreadsheetsd1zABLSeJWCsoHltS5oac94iz8sWm9xMFW3jZ6QemY8ceditgid0
+data_raw|stem|1b465ee7993dbb7b|25bc9c7efe8f0870|da63e5a79f29888b|-644868125||t19894.8050899059s||36169|rds|local|vector|||0.087||object path_df not found
+data_step02|stem|a4435c05be59aa0a|254141a9ecfb1322|fea23b42850a0ceb|1288137463||t19894.8085264426s|ae0655b8bcfc9eae|36166|rds|local|vector|||0.03||
+data_step03|stem|81726d35db8e33a6|4ea4f9d331a833ca|a0fd075c19c8b960|-1506262699||t19894.8085266765s|873a6a83b6efd591|9771|rds|local|vector|||0.004||
+data_step04|stem|34fa44cb355c083b|46d95e9949f7cd6d|8cd50ff6434f4b67|107571900||t19895.6605682278s|ceefd4cfdd72ebee|7012|rds|local|vector|||0.003||
+data_step05|stem|b613e5e5feb8a043|5428960f17af18e9|2a2d09757ff456a8|441616559||t19895.6605685611s|154677cb07b352d4|6819|rds|local|vector|||0.01||
+data_step06|stem|8d61d89fa62bd93b|8502d211ad2b8b1b|f43f1ba4ec4b34e6|-689129502||t19895.6605687693s|0c9e8457ba7267de|6826|rds|local|vector|||0.002||
+extract01_read_data_raw|function|b9afbf60ee0514e6|||||||||||||||
+extract02_select_questions|function|df6d179a5b76dd89|||||||||||||||
+file_1st_extract|object|206c19f94acdf216|||||||||||||||
+path_1st_extract|object|f3ebc09726ec62fd|||||||||||||||
+path_cdp_datasets|object|b4d005d3d9ced68d|||||||||||||||
+path_cdp_datasets_year|object|9700683aba07115c|||||||||||||||
+path_df|object|d010b468cc1539ba|||||||||||||||
+path_file|object|9e4ce0fca20be203|||||||||||||||
+read_data_raw|function|2b086ce1acf60f89|||||||||||||||
+report|stem||8773518445f4a447|cbfc52f9aede0dc5|787668912||t19885.6037006238s||0|file|local|vector|||0.508||missing value where TRUEFALSE needed
+step01_clean_colnames|function|f7d64decb73d8eee|||||||||||||||
+step01_read_data_raw|function|2b086ce1acf60f89|||||||||||||||
+step01_read_data_revied_1st_extract|function|2b086ce1acf60f89|||||||||||||||
+step02_clean_colnames|function|f7d64decb73d8eee|||||||||||||||
+step02_select_questions|function|8969808883a0d8e7|||||||||||||||
+step03_select_questions|function|8969808883a0d8e7|||||||||||||||
+step03_select_variables|function|0615ade493cc0fa4|||||||||||||||
+step04_process_merged_cols|function|8f9680d520d5c2d0|||||||||||||||
+step04_select_variables|function|ba1c35d706742951|||||||||||||||
+step05_process_merged_cols|function|8f9680d520d5c2d0|||||||||||||||
+step05_replace_missing_values|function|ac868c4f11f4d011|||||||||||||||
+step06_replace_missing_values|function|ac868c4f11f4d011|||||||||||||||
+step07_report|stem|5b9e44ffe7e81c9f|f7413da0732334ef|921061954c531355|-1179443564|QA_output/QA_checks-2024-06-27.html*QA_checks.Rmd|t19901.7928344712s|369cd22e09bbc984|4506454|file|local|vector|||8.631||
+var_year|object|eb70d4cf2ff78de2|||||||||||||||

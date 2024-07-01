@@ -1,0 +1,34 @@
+### Analyzable
+• Dataset is in a rectangular (rows and columns), machine-readable format. Variable names are the first row only. The remaining data should be made up of values in cells.
+• One or more columns uniquely identify rows in the data (i.e., primary key).
+• All column values are explicit.
+• No values are indicated by color coding.
+• All non-missing values are explicitly defined (e.g., if a blank is assumed to be 0, it is filled with a 0).
+• Only one piece of information is contained in a variable.
+
+### Complete
+• Everyone in your sample (e.g., consented, included in study, completed the instrument) is accounted for.
+• If you collected it, it should exist in the file.
+• There should be no rows with duplicate primary keys (e.g., study unique identifiers).
+• Interpretable
+• Variable names are machine (i.e., no special characters or spaces) AND human-readable (consistently formatted and clear to humans).
+• Variable and value labels are added if sharing in SPSS, Stata, SAS format.
+• Consider sharing in at least one non-proprietary format (e.g., CSV).
+
+### Valid
+• Variables conform to the constraints that you have laid out in your data dictionary
+• Planned variable types (e.g., numeric, character, date).
+• Allowable variable values and ranges (e.g., 1-50).
+• Item-level missingness aligns with variable universe and skip patterns.
+
+### Accurate
+• There are no glaring errors in the data that you have not acknowledged.
+• Based on any implicit knowledge you have.
+• Based on a comparison of information within and across sources.
+
+### Consistent
+• Variable values are consistently measured, formatted, or categorized within a column.
+• Variables are consistently measured across collections of the same form.
+
+### De-identified
+• Disclosure risks have been addressed (both direct and indirect identifiers have been removed/altered as needed).
